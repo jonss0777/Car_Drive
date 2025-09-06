@@ -7,16 +7,17 @@ void apply_speed(int speed){
   }
 }
 
-void apply_action( bool v1a, bool v1b, bool v2a, bool v2b , bool v3a, bool v3b, bool v4a, bool v4b){
-  digitalWrite(front_left_motor.pin1, v1a);
-  digitalWrite(front_left_motor.pin2, v1b);
-  digitalWrite(front_right_motor.pin1, v2a);
-  digitalWrite(front_right_motor.pin2, v2)b;
-  digitalWrite(back_left_motor.pin1, v3a);
-  digitalWrite(back_left_motor.pin2, v3b);
-  digitalWrite(back_right_motor.pin1, v4a);
-  digitalWrite(back_right_motor.pin2, v4b);
+void apply_action( bool a1, bool b1, bool a1, bool b2 , bool a3, bool b3, bool a4, bool b4){
+  digitalWrite(front_left_motor.pin1, a1);
+  digitalWrite(front_left_motor.pin2, b1);
+  digitalWrite(front_right_motor.pin1, a2);
+  digitalWrite(front_right_motor.pin2, b2);
+  digitalWrite(back_left_motor.pin1, a3);
+  digitalWrite(back_left_motor.pin2, b3);
+  digitalWrite(back_right_motor.pin1, a4);
+  digitalWrite(back_right_motor.pin2, b4);
 }
+
 
 void action() {
   switch (command) {
@@ -93,3 +94,4 @@ void action() {
       state = "STOP";
       break;
   }
+
